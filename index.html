@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Rock-Paper-Scissors</title>
+</head>
+<body>
+    <div class="main">
+        <div class="top">
+            <img class="top__logo" src="./images/ROCKPAPERSCISSORS..svg" alt="logo" width="155" height="93">
+
+            <div class="top__score-wrapper">
+                <p class="top__score">score</p>
+
+                <p class="top__score-num"></p>
+            </div>
+        </div>
+
+        <div class="button-main-wrapper">
+            <div class="button-wrapper">
+                <button class="paper-button">
+                    <img class="paper-img" id="paper-img" src="/images/paper.svg" alt="icon" width="198" height="203">
+                </button>
+
+                <button class="scissor-button">
+                    <img class="scissor-img" id="scissor-img" src="/images/scissor.svg" alt="icon" width="198" height="203">
+                </button>
+            </div>
+
+            <button class="rock-button">
+                <img class="rock-img" id="rock-img" src="/images/rock.svg" alt="icon" width="198" height="203">
+            </button>
+        </div>
+    </div>
+
+    <div class="rules-main-wrapper close">
+        <div class="rules-wrapper">
+            <p class="rules-desc">RULES</p>
+            <button class="close-btn">✖️</button>
+        </div>
+
+        <img class="rules-img" src="./images/rules.svg" alt="logo" width="305" height="271">
+    </div>
+
+    <div class="picked-page close">
+        <div class="player-choice">
+            <p class="player-choice-desc">You picked</p>
+
+            <div class="my-choice">
+
+            </div>
+        </div>
+
+        <div class="div-description">
+            <p class="result"></p>
+
+            <button class="play-again">Play again</button>
+        </div>
+
+        <div class="player-choice">
+            <p class="player-choice-desc">Computer picked</p>
+
+            <div class="computer-choice">
+
+            </div>
+        </div>
+    </div>
+
+    <button class="rules-btn">Rules</button>
+
+    <script src="./js/index.js"></script>
+</body>
+</html>

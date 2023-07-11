@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(134.34% 134.34% at 50% 0%, #1F3757 0%, #131537 100%);
+}
+
+.top {
+    width: 700px;
+    margin-bottom: 60px;
+    padding: 18px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 3px solid rgba(255, 255, 255, 0.289199);
+    border-radius: 15px;
+}
+
+.top__score-wrapper {
+    padding: 16px 48px;
+    background: linear-gradient(0deg, #F3F3F3 0%, #FFFFFF 100%);
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.196706);
+    border: none;
+    border-radius: 8px;
+}
+
+.top__score {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: #2A45C2;
+}
+
+.top__score-num {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 64px;
+    text-align: center;
+    color: #565468;
+}
+
+.button-main-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../images/Path.svg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center center;
+}
+
+.button-main-wrapper button {
+    background: none !important;
+    border: none;
+    border-radius: 50%;
+    transition: all 300ms ease-in-out;
+}
+
+.button-wrapper {
+    margin-bottom: 30px;
+}
+
+.scissor-button {
+    margin-left: 80px;
+}
+
+.button-main-wrapper button:hover {
+    box-shadow: 0 0 0 20px #ffffff2b;
+    border-radius: 50%;
+}
+
+.rules-btn {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    padding: 11px 37px;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
+    border-radius: 8px;
+    transition: all 300ms linear;
+}
+
+.rules-btn:hover {
+    background-color: #FFFFFF;
+    color: #3B4262;
+}
+
+.rules-main-wrapper {
+    position: absolute;
+    width: 400px;
+    padding: 32px;
+    background: #FFFFFF;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.196706);
+    border-radius: 8px;
+}
+
+.rules-wrapper {
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rules-desc {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 32px;
+    color: #3B4262;
+}
+
+.close-btn {
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+}
+
+.close-btn:hover {
+    opacity: 0.5;
+}
+
+.rules-img {
+    display: block;
+    margin: 0 auto;
+}
+
+.close {
+    display: none !important;
+}
+
+.blur {
+    transition:0.2s;
+    -webkit-filter: blur(2px);
+    filter: blur(2px);
+}
+
+
+.picked-page {
+    /* display: none !important; */
+    width: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.picked-page .paper-button {
+    background: none;
+    border: none;
+    border-radius: 50%;
+    transition: all 300ms ease-in-out;
+}
+
+.picked-page .paper-button:hover {
+    box-shadow: 0 0 0 20px #ffffff2b;
+    border-radius: 50%;
+}
+
+.player-choice {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.div-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.player-choice-desc, .result, .player-choice-desc{
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 3px;
+    color: #FFFFFF;
+    text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.196706);
+}
+
+.play-again {
+    margin-top: 30px;
+    padding: 15px 40px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 3px;
+    color: #565468;
+    background: linear-gradient(0deg, #f3f3f3 0%, #ffffff 100%);
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.196706);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 300ms linear;
+}
+
+.play-again:hover {
+    opacity: 0.8;
+}
